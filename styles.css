@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ 
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    height: 10vh;
+ 
+}
+ 
+.logo {
+    display: flex;
+    align-items: center;
+}
+ 
+.blink {
+    color: #ffcc00;
+    font-weight: bold;
+    font-size: 24px;
+}
+ 
+.it {
+    color: #66cc33;
+    font-weight: bold;
+    font-size: 24px;
+}
+ 
+.delivery-info {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+ 
+.location {
+    font-size: 12px;
+    color: gray;
+}
+ 
+.search-bar {
+   width: 40%;
+    margin: 0 20px;
+}
+ 
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    height: 30px;
+}
+ 
+.login-cart {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+ 
+.login-cart a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-size: 14px;
+}
+ 
+ 
+.cart {
+    background-color: #66cc33;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.card-info h4{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+} 
+.card-info p{
+    margin-bottom: 8px;
+font-size: 0.5px;
+color: #796868;
+}
+.card-info{
+    padding: 15px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+}
+   .box { 
+            width: calc(33.33% - 20px); 
+            display: inline-block;
+            vertical-align: top;
+           margin-bottom: 20px;
+        }
+        .box img {
+            width: 100%;
+            margin: 11px;
+        }
+        .grocery-boxes {
+            display: grid;
+            grid-template-columns: repeat(10, 120px);
+            justify-content: center;
+                    }
+        .grocery-boxes div {
+            flex: 1 1 calc(10% - 10px); 
+            box-sizing: border-box;
+        }
+        .grocery-boxes img {
+            width: 120px;
+            height: 200px;
+            display: block;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .card{
+            width:200px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #B4B4B4;
+            padding: 1px;
+            position: relative;
+        }
+        .card img{
+            width: 100%;
+            display: block;
+        }
+        .card-info{
+            padding: 10px;
+                    }
+        .card-info h4, card-info p{
+        margin: 15px;
+                        }
+        .card-info .price{
+            font-weight: bold;
+            color: black;
+        }
+        .card-info .weight{
+            opacity: 0.7;
+            color: black;
+        }
+        .add-button{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #DEF2D8;
+            color: #6BA058;
+            border: 1px solid black;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+.last-line{
+    display: inline-block;
+}
+/* Styling for the entire section */
+section.items {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust to your preferred container width */
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Flexbox for the price-items container */
+.price-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between each card */
+    justify-content: space-evenly; /* Aligns cards evenly across the width */
+}
+
+/* Styling for individual cards */
+.card {
+    width: 200px; /* Set a fixed width for each card */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* For the weight and price details */
+p.weight {
+    font-size: 0.9em;
+    color: #666;
+}
+
+p.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling for the add button */
+.add-button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #218838;
+}
+
+/* Flexbox for the price and add button in the same row */
+.last-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
